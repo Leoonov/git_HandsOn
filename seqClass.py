@@ -18,13 +18,13 @@ args.seq = args.seq.upper()
 
 if re.search('^[ACGTU]+$', args.seq):
     if re.search('T', args.seq):
-        print('The sequence is DNA')
+        print('Okay is DNA')
     elif re.search('U', args.seq):
-        print('The sequence is RNA')
+        print('Okay is RNA')
     else:
-        print('The sequence can be DNA or RNA')
+        print('Okay is DNA or RNA')
 else:
-    print('The sequence is not DNA nor RNA')
+    print('Okay is not DNA nor RNA')
 
 if args.motif:
     args.motif = args.motif.upper()
