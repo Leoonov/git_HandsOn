@@ -32,4 +32,9 @@ if args.motif:
     if re.search(args.motif, args.seq):
         print("OKAY")
     else:
+<<<<<<< HEAD
         print("NOT FOUND")
+=======
+        print("NOT FOUND")
+
+>>>>>>> motif
