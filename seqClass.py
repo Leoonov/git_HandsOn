@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+#make the code applicable to lowercase sequences 
 import sys, re
 from argparse import ArgumentParser
 
@@ -22,3 +22,12 @@ if re.search('^[ACGTU]+$', args.seq):
         print ('The sequence can be DNA or RNA')
 else:
     print ('The sequence is not DNA nor RNA')
+
+#Modification of seqClass.py to add this new feature, by appending the following code to the end of the script:
+if args.motif:
+    args.motif = args.motif.upper()
+    print(f'Motif search enabled: looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
+    if re.search(args.motif, args.seq):
+        print("FOUND")
+    else:
+        print("NOT FOUND")
