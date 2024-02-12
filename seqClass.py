@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#TRYING to demonstrate that I can handle with branches and I did not change the script
 #make the code applicable to lowercase sequences 
 import sys, re
 from argparse import ArgumentParser
